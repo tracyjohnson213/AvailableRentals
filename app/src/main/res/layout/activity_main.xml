@@ -4,4 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtMgmtCompanyCityStateZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:gravity="center"
+        android:text="@string/txtMgmtCompanyCityStateZip"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtMgmtCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/txtMgmtCompanyName"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtMgmtCompanyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:gravity="center"
+        android:text="@string/txtMgmtCompanyAddress"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtMgmtCompanyPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:gravity="center"
+        android:text="@string/txtMgmtCompanyPhone"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtMgmtCompanyFax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:gravity="center"
+        android:text="@string/txtMgmtCompanyFax"
+        android:textSize="25sp" />
+</RelativeLayout>

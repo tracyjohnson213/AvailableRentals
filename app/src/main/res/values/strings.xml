@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Available Rentals</string>
+    <string name="txtMgmtCompanyName">B and B Properties</string>
+    <string name="txtMgmtCompanyAddress">711 E Wardlow #200</string>
+    <string name="txtMgmtCompanyCityStateZip">Long Beach, CA 90807</string>
+    <string name="txtMgmtCompanyPhone">Phone: 562-424-3535</string>
+    <string name="txtMgmtCompanyFax">Fax: 562-424-3536</string>
 </resources>
