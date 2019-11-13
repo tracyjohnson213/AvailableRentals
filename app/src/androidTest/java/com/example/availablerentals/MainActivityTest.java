@@ -71,4 +71,10 @@ public class MainActivityTest {
             System.out.println("Step" + (i+1) + ": " + textViewObject[i] + " contains \"" + elementText[i]);
         }
     }
+
+    // TODO - verifyHorizontalSpacing
+    // TODO - verifyTextNotOverlayed
+    // TODO - verifyTextDisplayedTest_withLandscapeOrientation
+    // TODO - verifyHorizontalSpacing_withLandscapeOrientation
+    // TODO - verifyTextNotOverlayed_withLandscapeOrientation
 }

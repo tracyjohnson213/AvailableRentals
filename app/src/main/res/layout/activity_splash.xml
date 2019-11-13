@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/txtSpecial"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/specialoffer"
+        android:gravity="center_horizontal"
+        android:text="@string/txtOffer"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="216dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtProperty4Addres"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialCityState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="172dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtCityState"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="129dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtProperty4Zip"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtProperty4Price"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialBed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="84dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtProperty4Bed"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtSpecialBath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtProperty4Bath"
+        android:textSize="25sp" />
+</RelativeLayout>
