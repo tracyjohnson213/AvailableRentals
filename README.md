@@ -48,10 +48,16 @@ I have created a mockup of the application (../Available Rentals Mockup.bmpr) fo
 ## Credits
 
 ### Content
-Property addresses used from [Pinnacle Property Available Rentals](https://www.pinnaclepmc.com/featured-properties)
+Property photos are from:
+- [Zillow](https://www.zillow.com) ~ The leading real estate marketplace.
+- [Hotpads](https://www.hotpads.com) ~ Browse the largest and most trusted apartment and home rental site with our verified listings, fraud protection technology and real-time property updates.
+- [Redfin](https://www.redfin.com) ~ Search all real estate listings. Tour homes and make offers with the help of local Redfin real estate agents.
 
 ### Media
 Photos for this project are from Google images
+- forrentsign ~ https://advancedmassagebysara.com/apartment-for-rent-signs-dt01.hta
+- specialoffer ~ https://stock.adobe.com/images/special-offer-stamp/74641298?as_campaign=ftmigration2&as_channel=dpcft&as_campclass=brand&as_source=ft_web&as_camptype=acquisition&as_audience=users&as_content=closure_asset-detail-page
+
 
 ### Acknowledgements
 
