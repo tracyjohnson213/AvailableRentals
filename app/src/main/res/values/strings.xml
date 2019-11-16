@@ -34,4 +34,5 @@
     <string name="txtProperty5Bed">3 beds</string>
     <string name="txtProperty5Bath">2 baths</string>
     <string name="btnViewRentals">View Rentals</string>
+    <string name="imgLarge">Selected Property Images</string>
 </resources>
