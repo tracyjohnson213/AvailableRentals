@@ -36,4 +36,6 @@
     <string name="btnViewRentals">View Rentals</string>
     <string name="imgLarge">Selected Property Images</string>
     <string name="txtOneMoment">One moment to see more...</string>
+    <string name="btnPrevious">&gt;&gt;- Prev</string>
+    <string name="btnNext">Next ->></string>
 </resources>
