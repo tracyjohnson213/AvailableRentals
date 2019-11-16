@@ -80,8 +80,11 @@ public class PropertyActivity extends AppCompatActivity {
             pic = new ImageView(context);
             pic.setImageResource(Properties[position]);
             pic.setScaleType(ImageView.ScaleType.FIT_XY);
-            pic.setLayoutParams(new GridView.LayoutParams(330,300));
+            pic.setLayoutParams(new GridView.LayoutParams(500,300));
             return pic;
         }
     }
+
+    // TODO if Properties.length > 6 display next button when displaying 1 to 6
+    // TODO if Properties.length > 6 display prev button when displaying Properties > 6
 }
