@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class PropertyActivity extends AppCompatActivity {
+    // TODO move global variables to external file
+    //  TODO rename variable to property*photo*
     Integer[] Properties = {
             R.drawable.e3rdst1162livingroom,
             R.drawable.e4thst3225livingroom,
@@ -21,12 +23,13 @@ public class PropertyActivity extends AppCompatActivity {
             R.drawable.molinaave908livingroom,
             R.drawable.walnutave589front
     };
+    // TODO move global variables to external file
     String[] Addresses = {
             "1162 E 3rd St",
-            " 3225 E 4th St",
-            R.drawable.eoceanblvd1075front,
-            R.drawable.molinaave908livingroom,
-            R.drawable.walnutave589front
+            "3225 E 4th St",
+            "1075 E Ocean Blvd",
+            "908 Molina Ave",
+            "589 Walnut Ave"
     };
     ImageView pic;
 
@@ -43,7 +46,9 @@ public class PropertyActivity extends AppCompatActivity {
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(),"Selected Property " + (position+1),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),
+                        "Property: " + (Addresses[position] + "  - Long Beach, CA"),
+                        Toast.LENGTH_SHORT).show();
                 pic.setImageResource(Properties[position]);
             }
         });
