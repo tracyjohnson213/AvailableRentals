@@ -83,5 +83,19 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="84dp"
-        android:text="@string/btnViewRentals" />
+        android:text="@string/btnViewRentals"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnViewRentalCriteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/btnRentalCriteria"
+        android:textSize="16sp" />
 </RelativeLayout>

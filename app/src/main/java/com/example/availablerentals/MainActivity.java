@@ -27,11 +27,20 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
         // go to splash activity after click of button
-        Button button = (Button)findViewById(R.id.btnViewRentals);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button viewRentalsButton = (Button)findViewById(R.id.btnViewRentals);
+        viewRentalsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,SplashActivity.class));
+            }
+        });
+
+        // go to rental criteria activity after click of button
+        Button rentalCriteriaButton = (Button)findViewById(R.id.btnViewRentalCriteria);
+        rentalCriteriaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,RentalCriteriaActivity.class));
             }
         });
     }

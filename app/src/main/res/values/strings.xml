@@ -38,4 +38,16 @@
     <string name="txtOneMoment">One moment to see more...</string>
     <string name="btnPrevious">&gt;&gt;- Prev</string>
     <string name="btnNext">Next ->></string>
+    <string name="btnRentalCriteria">Rental Criteria</string>
+    <string name="txtRentalCriteriaP1">Rental Application and Application Fee ~ Each applicant of legal age must submit a rental application. There is a non-refundable application fee of $36.00 per applicant. Photo I.D. and Social Security Card</string>
+    <string name="txtRentalCriteriaP2">A valid government issued photo I.D. and Social Security Card is required to verify applicant’s identity. Income Requirements and Proof of Income</string>
+    <string name="txtRentalCriteriaP3">Applicants must provide proof of income with a completed application. Total gross monthly household income must be at least two (2) times the monthly rent amount.</string>
+    <string name="txtRentalCriteriaP4">Provide applicable form of:      Pay Stubs (4 most recent, consecutive).     Bank Statements (3 most recent, consecutive).     Official statements of additional income (statement of SSI, disability, child support, I-20 documentation, etc.).     Official Letter of Acceptance or New Hire Contract from Employer showing base salary amount.     1099 or W-2 (2 most recent years)     Tax Returns (2 most recent years)</string>
+    <string name="txtRentalCriteriaP5">B &amp; B Property Management will verify applicant’s employment, rental, and credit history, as well as a background check, to process the rental application. NO Evictions or Bankruptcy will be accepted.</string>
+    <string name="txtRentalCriteriaP7">Co-signers must qualify for income at three (3) times the monthly rent and have good credit.</string>
+    <string name="txtRentalCriteriaP6">Maximum number of occupants allowed for a one-bedroom apartment is 3 people.     Maximum number of occupants allowed for a two-bedroom apartment is 5 people.     Maximum number of occupants allowed for a three-bedroom apartment is 7 people.</string>
+    <string name="txtRentalCriteriaT1">Rental Criteria</string>
+    <string name="txtRentalCriteriaT2">Employment, Rental, Credit History, and Background Check</string>
+    <string name="txtRentalCriteriaT3">Occupancy Standards</string>
+    <string name="txtRentalCriteriaT4">Co-signers</string>
 </resources>
