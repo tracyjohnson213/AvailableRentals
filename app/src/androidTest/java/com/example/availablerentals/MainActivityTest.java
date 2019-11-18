@@ -25,6 +25,7 @@ import java.util.function.BooleanSupplier;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.assertThat;
+import static androidx.test.espresso.matcher.ViewMatchers.isCompletelyDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
@@ -57,23 +58,22 @@ public class MainActivityTest {
      * verifyTextDisplayedTest()
      * Given MainActivity
      * When system launches
-     * Then user sees ${elementText} in ${textViewObject}
+     * Then user sees ${elementText} displayed in ${textViewObject}
+     * And user sees ${elementText} is completely displayed
+     * And ${textViewObject} contains specific text in ${elementText}
      *******/
     public void verifyTextDisplayedTest() {
-        // TODO - add output to show result of test title
-        System.out.println("--Verify Text on Main Activity--");
         for (int i = 0; i < textViewObject.length; i++) {
             onView(withText(elementText[i]))
                     .check(matches(isDisplayed()));
+            onView(withText(elementText[i]))
+                    .check(matches(isCompletelyDisplayed()));
             onView(withId(textViewObject[i]))
                     .check(matches(withText(elementText[i])));
-            // TODO - add output to show result of test step
-            System.out.println("Step" + (i+1) + ": " + textViewObject[i] + " contains \"" + elementText[i]);
         }
     }
 
     // TODO - verifyHorizontalSpacing
-    // TODO - verifyTextNotOverlayed
     // TODO - verifyTextDisplayedTest_withLandscapeOrientation
     // TODO - verifyHorizontalSpacing_withLandscapeOrientation
     // TODO - verifyTextNotOverlayed_withLandscapeOrientation
