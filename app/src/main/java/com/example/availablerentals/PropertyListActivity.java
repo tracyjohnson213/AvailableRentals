@@ -19,7 +19,7 @@ public class PropertyListActivity extends AppCompatActivity {
         badgeViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PropertyListActivity.this,PropertyActivity.class));
+                startActivity(new Intent(PropertyListActivity.this, PropertyBadgeActivity.class));
             }
         });
     }

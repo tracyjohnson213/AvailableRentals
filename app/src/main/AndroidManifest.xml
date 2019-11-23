@@ -13,7 +13,7 @@
         <activity android:name=".CosignersCriteriaActivity" />
         <activity android:name=".EmploymentCriteriaActivity" />
         <activity android:name=".RentalCriteriaActivity" />
-        <activity android:name=".PropertyActivity" />
+        <activity android:name=".PropertyBadgeActivity" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

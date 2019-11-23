@@ -10,12 +10,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class PropertyActivity extends AppCompatActivity {
+public class PropertyBadgeActivity extends AppCompatActivity {
     // TODO move global variables to external file
     //  TODO rename variable to property*photo*
     Integer[] Properties = {
@@ -38,14 +37,14 @@ public class PropertyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_property);
+        setContentView(R.layout.activity_property_badge);
 
         // go to property activity after click of button
         Button listViewButton = (Button)findViewById(R.id.btnList);
         listViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PropertyActivity.this,PropertyListActivity.class));
+                startActivity(new Intent(PropertyBadgeActivity.this,PropertyListActivity.class));
             }
         });
 
