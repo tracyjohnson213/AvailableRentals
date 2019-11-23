@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PropertyListActivity"></activity>
+        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".PropertyListActivity" />
         <activity android:name=".CosignersCriteriaActivity" />
         <activity android:name=".EmploymentCriteriaActivity" />
         <activity android:name=".RentalCriteriaActivity" />

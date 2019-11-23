@@ -52,4 +52,6 @@
     <string name="txtRentalCriteriaT4">Co-signers</string>
     <string name="btnList">Show List</string>
     <string name="btnBadges">Show Badges</string>
+    <string name="btnAboutUs">About Us</string>
+    <string name="btnEmail">Send Email</string>
 </resources>
