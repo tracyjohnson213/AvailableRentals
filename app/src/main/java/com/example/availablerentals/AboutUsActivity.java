@@ -32,13 +32,13 @@ public class AboutUsActivity extends AppCompatActivity {
             }
         });
 
-        // go to rental criteria activity after click of button
-        /*Button aboutUsButton = (Button)findViewById(R.id.btnEmail);
-        aboutUsButton.setOnClickListener(new View.OnClickListener() {
+        // go to email form activity after click of button
+        Button emailButton = (Button)findViewById(R.id.btnEmail);
+        emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AboutUsActivity.this,EmailActivity.class));
+                startActivity(new Intent(AboutUsActivity.this,EmailFormActivity.class));
             }
-        });*/
+        });
     }
 }

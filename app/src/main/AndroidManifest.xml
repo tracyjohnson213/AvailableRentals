@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".EmailConfirmationActivity"></activity>
+        <activity android:name=".EmailFormActivity" />
+        <activity android:name=".AboutUsActivity" />
         <activity android:name=".PropertyListActivity" />
         <activity android:name=".CosignersCriteriaActivity" />
         <activity android:name=".EmploymentCriteriaActivity" />

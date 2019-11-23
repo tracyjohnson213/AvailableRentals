@@ -52,5 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,AboutUsActivity.class));
             }
         });
+
+        // go to email form activity after click of button
+        Button emailButton = (Button)findViewById(R.id.btnEmail);
+        emailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,EmailFormActivity.class));
+            }
+        });
     }
 }
