@@ -11,7 +11,7 @@
     <string name="txtProperty1Address">1162 E 3rd St</string>
     <string name="txtProperty2Address">908 Molina Ave</string>
     <string name="txtProperty3Address">1075 E Ocean Blvd</string>
-    <string name="txtProperty4Addres">3225 E 4th St</string>
+    <string name="txtProperty4Address">3225 E 4th St</string>
     <string name="txtProperty5Address">589 Walnut Ave</string>
     <string name="txtProperty1Zip">90802</string>
     <string name="txtProperty2Zip">90804</string>
@@ -50,4 +50,6 @@
     <string name="txtRentalCriteriaT2">Employment, Rental, Credit History, and Background Check</string>
     <string name="txtRentalCriteriaT3">Occupancy Standards</string>
     <string name="txtRentalCriteriaT4">Co-signers</string>
+    <string name="btnList">Show List</string>
+    <string name="btnBadges">Show Badges</string>
 </resources>

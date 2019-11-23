@@ -3,11 +3,13 @@ package com.example.availablerentals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -38,6 +40,16 @@ public class PropertyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property);
 
+        // go to property activity after click of button
+        Button listViewButton = (Button)findViewById(R.id.btnList);
+        listViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PropertyActivity.this,PropertyListActivity.class));
+            }
+        });
+
+        // create grid of photos and large image
         GridView grid = (GridView)findViewById(R.id.gridView);
         final ImageView pic = (ImageView)findViewById(R.id.imgLarge);
 
@@ -54,6 +66,7 @@ public class PropertyActivity extends AppCompatActivity {
         });
     }
 
+    // trigger for large image from selected photo in grid
     public class ImageAdapter extends BaseAdapter {
         private Context context;
         public ImageAdapter(Context c) {

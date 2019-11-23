@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".PropertyActivity">
 
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnList"/>
+
     <GridView
         android:id="@+id/gridView"
         android:layout_width="fill_parent"
