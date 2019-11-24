@@ -59,4 +59,5 @@
     <string name="editTextPhone">Phone number</string>
     <string name="editTextMessage">Please add your comments.  We sould love to hear from you.</string>
     <string name="txtEmailConfirmation">Thanks for your email.  We look forward to speaking to you soon!</string>
+    <string name="btnOK">OK</string>
 </resources>
