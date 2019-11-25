@@ -74,16 +74,16 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/btnViewRentals"
+        android:id="@+id/btnAboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="84dp"
-        android:text="@string/btnViewRentals"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/btnAboutUs"
         android:textSize="16sp" />
 
     <Button
@@ -93,9 +93,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginBottom="104dp"
         android:text="@string/btnRentalCriteria"
         android:textSize="16sp" />
 
@@ -107,23 +107,23 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="234dp"
-        android:layout_marginLeft="234dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginLeft="191dp"
         android:layout_marginBottom="21dp"
         android:text="@string/btnEmail"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/btnAboutUs"
+        android:id="@+id/btnViewRentals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="235dp"
-        android:layout_marginLeft="235dp"
-        android:layout_marginBottom="81dp"
-        android:text="@string/btnAboutUs"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/btnViewRentals"
         android:textSize="16sp" />
 
 </RelativeLayout>
