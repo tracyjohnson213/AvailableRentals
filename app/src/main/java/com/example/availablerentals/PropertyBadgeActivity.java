@@ -39,12 +39,21 @@ public class PropertyBadgeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_badge);
 
-        // go to property activity after click of button
+        // go to property list activity after click of button
         Button listViewButton = (Button)findViewById(R.id.btnList);
         listViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PropertyBadgeActivity.this,PropertyListActivity.class));
+            }
+        });
+
+        // go to property activity after click of large image
+        ImageView viewPropertyImages = (ImageView)findViewById(R.id.imgLarge);
+        viewPropertyImages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PropertyBadgeActivity.this,PropertyActivity.class));
             }
         });
 
