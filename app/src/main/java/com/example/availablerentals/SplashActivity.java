@@ -16,16 +16,16 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // set text for address
-        int position = 3;
+        // set text for address in position for special property
+        int special = 3;
         TextView txtPropertyAddress = (TextView)findViewById(R.id.txtSpecialAddress);
-        txtPropertyAddress.setText(Variables.Addresses[position][0]);
+        txtPropertyAddress.setText(Variables.Addresses[special][0]);
         TextView txtPropertyZip = (TextView)findViewById(R.id.txtSpecialZip);
-        txtPropertyZip.setText(Variables.Addresses[position][1]);
+        txtPropertyZip.setText(Variables.Addresses[special][1]);
         TextView txtPropertyBeds = (TextView)findViewById(R.id.txtSpecialBed);
-        txtPropertyBeds.setText(Variables.Unitsizes[position][0] + "/" + Variables.Unitsizes[position][1]);
+        txtPropertyBeds.setText(Variables.Unitsizes[special][0] + "/" + Variables.Unitsizes[special][1]);
         TextView txtPropertyPrice = (TextView)findViewById(R.id.txtSpecialPrice);
-        txtPropertyPrice.setText(Variables.Unitsizes[position][2]);
+        txtPropertyPrice.setText(Variables.Unitsizes[special][2]);
 
         // set timer to close activity
         TimerTask task = new TimerTask() {
