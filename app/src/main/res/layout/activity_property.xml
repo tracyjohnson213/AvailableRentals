@@ -20,4 +20,46 @@
         android:orientation="horizontal"
         android:gravity="clip_vertical|center_horizontal"/>
 
+    <TextView
+        android:id="@+id/txtPropertyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SliderDots"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10sp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPropertyCityState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPropertyAddress"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtCityState"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPropertyZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPropertyCityState"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPropertyBeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPropertyPrice"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPropertyPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPropertyZip"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
 </RelativeLayout>
