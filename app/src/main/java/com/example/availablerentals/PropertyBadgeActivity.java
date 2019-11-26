@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -23,6 +25,8 @@ public class PropertyBadgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_badge);
+        // create sharedPref editor
+        final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
         // go to property list activity after click of button
         Button listViewButton = (Button)findViewById(R.id.btnList);
@@ -55,6 +59,11 @@ public class PropertyBadgeActivity extends AppCompatActivity {
                         "Property: " + (Addresses[position][0] + "  - Long Beach, CA"),
                         Toast.LENGTH_SHORT).show();
                 pic.setImageResource(Properties[position][0]);
+
+                // set sharedPref editor
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putInt("position", position);
+                editor.commit();
             }
         });
     }
