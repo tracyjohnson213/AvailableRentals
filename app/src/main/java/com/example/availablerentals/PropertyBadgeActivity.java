@@ -14,24 +14,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import static com.example.availablerentals.Variables.*;
+
 public class PropertyBadgeActivity extends AppCompatActivity {
-    // TODO move global variables to external file
-    //  TODO rename variable to property*photo*
-    Integer[] Properties = {
-            R.drawable.e3rdst1162livingroom,
-            R.drawable.e4thst3225livingroom,
-            R.drawable.eoceanblvd1075front,
-            R.drawable.molinaave908livingroom,
-            R.drawable.walnutave589front
-    };
-    // TODO move global variables to external file
-    String[] Addresses = {
-            "1162 E 3rd St",
-            "3225 E 4th St",
-            "1075 E Ocean Blvd",
-            "908 Molina Ave",
-            "589 Walnut Ave"
-    };
     ImageView pic;
 
     @Override
@@ -67,9 +52,9 @@ public class PropertyBadgeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(),
-                        "Property: " + (Addresses[position] + "  - Long Beach, CA"),
+                        "Property: " + (Addresses[position][0] + "  - Long Beach, CA"),
                         Toast.LENGTH_SHORT).show();
-                pic.setImageResource(Properties[position]);
+                pic.setImageResource(Properties[position][0]);
             }
         });
     }
@@ -99,7 +84,7 @@ public class PropertyBadgeActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             pic = new ImageView(context);
-            pic.setImageResource(Properties[position]);
+            pic.setImageResource(Properties[position][0]);
             pic.setScaleType(ImageView.ScaleType.FIT_XY);
             pic.setLayoutParams(new GridView.LayoutParams(500,300));
             return pic;
