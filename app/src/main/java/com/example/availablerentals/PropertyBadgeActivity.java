@@ -14,6 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.example.availablerentals.Variables.*;
@@ -52,9 +53,11 @@ public class PropertyBadgeActivity extends AppCompatActivity {
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(),
-                        "Property: " + (Address[position][0] + "  - Long Beach, CA " + Address[position][1]),
-                        Toast.LENGTH_SHORT).show();
+                TextView txtPropertyAddress = (TextView)findViewById(R.id.txtPropertyInfo);
+                txtPropertyAddress.setText(Address[position][0]+ "  - Long Beach, CA " + Address[position][1]);
+                TextView txtPropertyUnit = (TextView)findViewById(R.id.txtPropertyInfo2);
+                txtPropertyUnit.setText(Unitsize[position][0]+ "/" + Unitsize[position][1] + " " + Unitsize[position][2]);
+                
                 pic.setImageResource(PropertyImage[position][0]);
 
                 // set sharedPref editor
