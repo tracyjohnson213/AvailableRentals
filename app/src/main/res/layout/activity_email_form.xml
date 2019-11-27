@@ -23,21 +23,25 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="91dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="@string/editTextName"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="163dp"
         android:ems="10"
         android:hint="@string/editTextEmail"
@@ -45,23 +49,28 @@
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="238dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="@string/editTextPhone"
         android:inputType="phone" />
 
     <EditText
         android:id="@+id/editTextMessage"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
         android:layout_marginTop="309dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/editTextMessage"
@@ -72,13 +81,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="301dp"
-        android:layout_marginRight="301dp"
-        android:layout_marginBottom="3dp"
         android:text="@string/btnEmail" />
 
 </RelativeLayout>
