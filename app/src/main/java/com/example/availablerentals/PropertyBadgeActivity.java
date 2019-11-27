@@ -53,11 +53,13 @@ public class PropertyBadgeActivity extends AppCompatActivity {
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView txtClickImage = (TextView)findViewById(R.id.txtClickImage);
+                txtClickImage.setText("Click large image to see more photos");
                 TextView txtPropertyAddress = (TextView)findViewById(R.id.txtPropertyInfo);
                 txtPropertyAddress.setText(Address[position][0]+ "  - Long Beach, CA " + Address[position][1]);
                 TextView txtPropertyUnit = (TextView)findViewById(R.id.txtPropertyInfo2);
                 txtPropertyUnit.setText(Unitsize[position][0]+ "/" + Unitsize[position][1] + " " + Unitsize[position][2]);
-                
+
                 pic.setImageResource(PropertyImage[position][0]);
 
                 // set sharedPref editor
