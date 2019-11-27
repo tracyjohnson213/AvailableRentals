@@ -7,12 +7,6 @@
     android:orientation="vertical"
     tools:context=".PropertyBadgeActivity">
 
-    <Button
-        android:id="@+id/btnList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnList"/>
-
     <GridView
         android:id="@+id/gridView"
         android:layout_width="fill_parent"
@@ -50,7 +44,8 @@
         <ImageView
             android:id="@+id/imgLarge"
             android:layout_width="270dp"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:contentDescription="@string/imgLarge" />
