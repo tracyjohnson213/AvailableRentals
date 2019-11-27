@@ -14,6 +14,11 @@ public class CosignersCriteriaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cosigners_criteria);
 
+        // set home page icon launcher
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         // go to rental criteria activity after click of button
         Button prevButton = (Button)findViewById(R.id.btnRentalCriteria2);
         prevButton.setOnClickListener(new View.OnClickListener() {

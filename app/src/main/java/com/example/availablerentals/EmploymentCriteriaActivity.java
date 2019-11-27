@@ -14,6 +14,11 @@ public class EmploymentCriteriaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employment_criteria);
 
+        // set home page icon launcher
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         // go to rental criteria activity after click of button
         Button prevButton = (Button)findViewById(R.id.btnRentalCriteria1);
         prevButton.setOnClickListener(new View.OnClickListener() {

@@ -25,6 +25,12 @@ public class PropertyBadgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_badge);
+
+        // set action bar icon
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         // create sharedPref editor
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 
