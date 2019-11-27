@@ -109,12 +109,21 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/txtOneMoment"
+        android:id="@+id/txtOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
+        android:text="One" />
+    <TextView
+        android:id="@+id/txtOneMoment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtOne"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
         android:text="@string/txtOneMoment" />
 
 </RelativeLayout>

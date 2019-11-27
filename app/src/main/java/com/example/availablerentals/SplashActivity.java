@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import java.util.Timer;
@@ -38,5 +39,9 @@ public class SplashActivity extends AppCompatActivity {
 
         Timer opening = new Timer();
         opening.schedule(task,3000);
+
+        // rotate text
+        TextView txtRotate = (TextView)findViewById(R.id.txtOne);
+        txtRotate.startAnimation(AnimationUtils.loadAnimation(this,R.anim.rotatation));
     }
 }

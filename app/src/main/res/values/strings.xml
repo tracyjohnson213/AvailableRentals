@@ -35,7 +35,7 @@
     <string name="txtProperty5Bath">2 baths</string>
     <string name="btnViewRentals">View Rentals</string>
     <string name="imgLarge">Selected Property Images</string>
-    <string name="txtOneMoment">One moment to see more...</string>
+    <string name="txtOneMoment">moment to see more...</string>
     <string name="btnPrevious">&gt;&gt;- Prev</string>
     <string name="btnNext">Next ->></string>
     <string name="btnRentalCriteria">Rental Criteria</string>
