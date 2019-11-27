@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import static com.example.availablerentals.Variables.*;
+
 public class PropertyActivity extends AppCompatActivity {
     ViewPagerAdapterActivity adapter;
     ViewPager viewPager;
@@ -36,18 +38,18 @@ public class PropertyActivity extends AppCompatActivity {
         viewPager = (ViewPager)findViewById(R.id.viewPager);
         // retrieve sharedPref
         int position = sharedPref.getInt("position",0);
-        adapter = new ViewPagerAdapterActivity(PropertyActivity.this,Variables.Properties[position]);
+        adapter = new ViewPagerAdapterActivity(PropertyActivity.this,PropertyImage[position]);
         viewPager.setAdapter(adapter);
 
         // set text for address
         TextView txtPropertyAddress = (TextView)findViewById(R.id.txtPropertyAddress);
-        txtPropertyAddress.setText(Variables.Addresses[position][0]);
+        txtPropertyAddress.setText(Address[position][0]);
         TextView txtPropertyZip = (TextView)findViewById(R.id.txtPropertyZip);
-        txtPropertyZip.setText(Variables.Addresses[position][1]);
+        txtPropertyZip.setText(Address[position][1]);
         TextView txtPropertyBeds = (TextView)findViewById(R.id.txtPropertyBeds);
-        txtPropertyBeds.setText(Variables.Unitsizes[position][0] + "/" + Variables.Unitsizes[position][1]);
+        txtPropertyBeds.setText(Unitsize[position][0] + "/" + Unitsize[position][1]);
         TextView txtPropertyPrice = (TextView)findViewById(R.id.txtPropertyPrice);
-        txtPropertyPrice.setText(Variables.Unitsizes[position][2]);
+        txtPropertyPrice.setText(Unitsize[position][2]);
 
         // slide dots
         sliderDotspanel = (LinearLayout)findViewById(R.id.SliderDots);
@@ -87,6 +89,7 @@ public class PropertyActivity extends AppCompatActivity {
             }
         });
     }
+
 }
 //https://www.youtube.com/watch?v=SX8l9vv-N_4
 //http://www.sanktips.com/2017/10/01/how-to-add-dots-indicator-to-image-slider-with-viewpager-in-android-studio/

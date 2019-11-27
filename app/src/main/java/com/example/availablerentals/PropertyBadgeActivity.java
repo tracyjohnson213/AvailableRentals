@@ -53,9 +53,9 @@ public class PropertyBadgeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(),
-                        "Property: " + (Addresses[position][0] + "  - Long Beach, CA"),
+                        "Property: " + (Address[position][0] + "  - Long Beach, CA " + Address[position][1]),
                         Toast.LENGTH_SHORT).show();
-                pic.setImageResource(Properties[position][0]);
+                pic.setImageResource(PropertyImage[position][0]);
 
                 // set sharedPref editor
                 SharedPreferences.Editor editor = sharedPref.edit();
@@ -74,7 +74,7 @@ public class PropertyBadgeActivity extends AppCompatActivity {
 
         @Override
         public int getCount(){
-            return Properties.length;
+            return PropertyImage.length;
         }
 
         @Override
@@ -90,9 +90,9 @@ public class PropertyBadgeActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             pic = new ImageView(context);
-            pic.setImageResource(Properties[position][0]);
+            pic.setImageResource(PropertyImage[position][0]);
             pic.setScaleType(ImageView.ScaleType.FIT_XY);
-            pic.setLayoutParams(new GridView.LayoutParams(500,300));
+            pic.setLayoutParams(new GridView.LayoutParams(500,250));
             return pic;
         }
     }
